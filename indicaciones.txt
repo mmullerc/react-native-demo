@@ -1,0 +1,42 @@
+-------------------------------------------
+Especificaciones del Servidor
+
+
+Lo ideal de este mini proyecto es realizar una pequeña aplicación en react-native.
+
+Hay un Server hecho en NodeJS que servirá para hacer un CRUD. para correr este server deben tener instalados las siguientes cosas:
+
+-Mysql
+-NodeJS
+-npm
+-una base de datos que se llame cars
+
+(IMPORTANTE - En caso de no conectar, revisar el archivo db.js y poner los credenciales correctos)
+
+Una Vez que tienen listo lo anterior, entran a la base del proyecto y corren el siguente comando en la consola para instalar las dependencias:
+
+npm install
+
+Una vez que se instalan las dependencias, se puede correr el comando
+
+npm run dev
+
+Si todo sale bien el server deberia correr.
+
+Rutas del Api
+
+Get:
+http://localhost:5000/api/cars
+
+Get by Id:
+http://localhost:5000/api/cars/id
+
+Post:
+http://localhost:5000/api/cars
+
+Put:
+http://localhost:5000/api/cars/id
+
+Delete:
+http://localhost:5000/api/cars/id
+--------------------------------------------------------------------------------------
