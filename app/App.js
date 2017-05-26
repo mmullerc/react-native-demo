@@ -35,11 +35,7 @@ class Cars extends Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:5000/api/cars')
-    .then((response) => response.json())
-     .then((responseJson) => {
-       this.showResult(responseJson);
-    });
+    alert("hi!");
   }
 
   showResult(response) {
