@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import  App from './App';
+import { Provider } from 'react-redux';
+import { store } from './store.js';
 
 class setup extends React.Component {
     constructor() {
@@ -10,7 +12,9 @@ class setup extends React.Component {
     }
     render() {
       return (
-          <App />
+         <Provider store={store}>
+            <App />
+          </Provider>
       );
     }
   }

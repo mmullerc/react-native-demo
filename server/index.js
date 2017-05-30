@@ -12,10 +12,6 @@ app.server = http.createServer(app);
 // logger
 app.use(morgan('dev'));
 
-app.use(cors({
-	exposedHeaders: config.corsHeaders
-}));
-
 app.use(bodyParser.json());
 app.use('/api', carRouter);
 

@@ -4,44 +4,15 @@ import { StyleSheet,
   Image,
   View,
   Text } from 'react-native';
+import { CarList } from './containers/CarList';
 
 class App extends Component {
   render() {
     return (
       <View>
-        <Cars />
+        <CarList />
       </View>
     );
-  }
-}
-
-class Cars extends Component {
-  constructor() {
-    super();
-    this.state = {
-      data: []
-    }
-  }
-  render() {
-    return (
-      <View style={{alignItems: 'center', marginTop: 40}}>
-      {this.state.data.map((car, i) => {
-        return (
-          <Text key={i}>{car.name} - {car.brand}</Text>
-        );
-      })}
-      </View>
-    );
-  }
-
-  componentDidMount() {
-    alert("hi!");
-  }
-
-  showResult(response) {
-    this.setState({
-        data: response
-    });
   }
 }
 
